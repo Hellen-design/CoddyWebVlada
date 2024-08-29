@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vlada</title> <!-- Название страницы -->
+	<!-- Подключаем шрифты через GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css"> <!-- Подключаем файл со стилями -->
+	<body>
+		<header id="header" class="header"> <!-- "Шапка" сайта -->
+			<div>
+				<div class="nav container"> <!-- nav-класс для настройки меню --> 
+					<!-- container (ограничивает содержимое, чтобы всё уместилось на экран) -->
+					<img src="img/logo.svg" alt="logo" class="logo"> <!-- Добавляем логотип -->
+					<ul class="menu"> <!-- Добавляем пункты меню -->
+						<li>
+							<a href="#cats">Выбери кота</a> <!-- "#cats" перекручивает страницу к этому блоку этого класса -->
+						</li>
+						<li>
+							<a href="#about">О Владе</a>
+						</li>
+						<li>
+							<a href="#food">Еда для кота</a>
+						</li>
+						<li>
+							<a href="#">Дворовый кот</a>
+						</li>
+					</ul>
+					<!-- Кнопка WhatsApp -->
+					<a href="https://wa.me/79106175060?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."class="whatsapp"><img src="img/Кнопка.svg" alt=""></a>
+				</div>
+				<div class="offer"> <!-- Блок с главной картинкой, заголовком и кнопкой "Поехали!" -->
+					<h1 class="container">Сайт про ухаживание<br>за котами</h1> <!-- Заголовок + container (ограничивает содержимое, чтобы всё уместилось на экран) -->
+					<img class="start" src="img/Button.svg" alt="Button"> <!-- Кнопка "Поехали!" -->
+				</div>
+			</div>
+		</header>
+
+		<section id="about" class="about"> <!-- Блок "О Владе" -->
+			<div class="container horizon"> <!-- Контейнер и класс, чтобы подключить Flexbox и выровнять меню по горизонтали -->
+				<div class="kot"> <!-- Класс, чтобы задать высоту картинке с котом -->
+					<img src="img/Kotik.png" alt="Kotik">
+				</div>
+				<div class="text1"> <!-- Класс, чтобы оформить текстовый блок -->
+					<h1>Влада Щеколдина</h1> <!-- Заголовок блока с текстом -->
+					<p>Здравствуйте, меня зовут Влада. Я сделала этот сайт для вас!</p>
+					<p>На нём вы можете познакомиться с разными породами котиков, узнать их характер и аппетит, как часто нужно чесать и как можно поиграть.</p>
+					<p>Потом я сделаю приложение и вы сможете попробовать сделать всё это на практике.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="cats" class="cats"> <!-- Блок "Выберите кота" -->
+			<div class="container"> <!-- Контейнер (ограничивает содержимое, чтобы всё уместилось на экран) -->
+				<h1>Выберите кота, чтобы узнать о нём</h1> <!-- Заголовок блока -->
+				<div class="cats"> <!-- Класс, чтобы подключить Flexbox и подключить выравнивание по горизонтали -->
+					<div class="sec1"> <!-- Класс, чтобы задать одинаковую ширину блокам с картинками -->
+						<img src="img/image2.png" alt="Дворовый"> <!-- Вставляем картинку -->
+						<a href="#"><h2>Дворовый</h2></a><!-- Вставляем подпись -->
+					</div>
+					<div class="sec1">
+						<img src="img/image3.png" alt="Шотландский">
+						<a href="#"><h2>Шотландский вислоухий</h2></a>
+					</div>
+					<div class="sec1">
+						<img src="img/image4.png" alt="Мейн-кун">
+						<a href="#"><h2>Мейн-кун</h2></a>
+					</div>
+					<div class="sec1">
+						<img src="img/image5.png" alt="Бенгальский">
+						<a href="#"><h2>Бенгальский</h2></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="app" class="app"> <!-- Класс, чтобы настроить блок с описанием приложения -->
+			<div class="container"> <!-- Контейнер (ограничивает содержимое, чтобы всё уместилось на экран) -->
+				<div class="about_app"> <!-- Класс, чтобы подключить Flexbox и настроить поля -->
+					<div>
+						<h1>Приложение "Моя котейка"</h1>
+						<p> При входе в приложение вы создёте учётную запичь и выбираете себе котика, о котором будете заботиться. Выбираете ему породу, имя, пол - вс это вы не сможете поменять в течение игры. После выбора у вас появляется котёнок.</p>
+						<p>Котёнка нужно кормить, чесать, класть спать, играть с ним и чистить лоток. Как часто делать каждое действие, зависит от породы котейки</p>
+						<p>С каждым днём котёнок становится старше, немного меняется его характер - он меньше хочет играть и больше спать. А в течение дня он начинает хотеть что-то делать, об этом он вам сообщит в уведомлении. Один раз в день нуэно чистить лоток, иначе котейка становится грустным из-за плохого запаха</p>
+						<p><b>Приложение знакомит вас с породами кошечек, учит ответственности и показывает, что значит быть хозяином целого животного!</b></p>
+						<p><b class="cvet">Находится в разработке... Скоро его можно будет скачать!</b></p>
+					</div>
+					<img src="img/App1.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section id="food" class="food"> <!-- Класс с едой для котов -->
+			<div class="container">
+				<h1>Еда для вашего кота</h1> <!-- Заголовок блока -->
+				<div class="food_item">  <!-- Класс, чтобы подключить Flexbox и выровнять элементы -->
+					<div class="fi"> <!-- Класс, чтобы настроить анимацию при наведении -->
+						<img src="img/food/Food1.png" alt=""> <!-- Картинка -->
+						<p>Сухой корм</p> <!-- Подпись картинки -->
+					</div>
+					<div class="fi">
+						<img src="img/food/Food2.png" alt="">
+						<p>Овощи</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food3.png" alt="">
+						<p>Трава</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food4.png" alt="">
+						<p>Рыба</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food5.png" alt="">
+						<p>Мышь</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food6.png" alt="">
+						<p>Молоко</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food7.png" alt="">
+						<p>Каша</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food8.png" alt="">
+						<p>Курица</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food9.png" alt="">
+						<p>Индейка</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food10.png" alt="">
+						<p>Говядина</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food11.png" alt="">
+						<p>Свинина</p>
+					</div>
+					<div class="fi">
+						<img src="img/food/Food12.png" alt="">
+						<p>Жидкий корм</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer" class="footer"> <!-- Блок футера со ссылками-меню для перехода на блоки сайта -->
+			<div class="container"> <!-- Контейнер (ограничивает содержимое, чтобы всё уместилось на экран) -->
+				<div class="footer_align"> <!-- Класс, чтобы подключить Flexbox и задать выравнивание по горизонтали -->
+					<ul class="menu_footer"> <!-- Класс, чтобы подключить Flexbox и задать расстояние между элементами -->
+						<li><a href="#cats">Выбери кота</a></li>
+						<li><a href="#about">О Владе</a></li>
+						<li><a href="#food">Еда для кота</a></li>
+						<li><a href="#">Дворовый кот</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+	</html>
